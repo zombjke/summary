@@ -6,16 +6,18 @@
     <meta name="HandheldFriendly" content="true">
     <meta name="MobileOptimized" content="width">
     <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="description" content="Full stack developer resume">
+    <meta name="description" content="Full stack developer summary">
     <meta name="author" content="Rasulov Timur Olegovich">
 
     <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <script src="/js/bootstrap.bundle.min.js"></script>
 </head>
 <body class="bg-secondary">
-    <div class="container bg-light">
-        <div class="row pt-5 px-3">
+    <div class="container bg-light py-4">
+        <div class="row pt-2 px-5">
             <div class="col">
                 <img class="rounded-circle mx-auto d-block" src="/images/photo.jpg" width="200" height="200">
             </div>
@@ -34,44 +36,392 @@
                     <small class="text-body-tertiary" data-bs-toggle="tooltip" title="Московский финансово-промышленный университет 'Синергия'.&#013;Информационные системы и технологии ">Автоматизированные системы обработки информации и управления</small>
                 </p>
             </div>
-            <div class="col text-end">
-                <a href="mailto:rasulov.lg@gmail.com">rasulov.lg@gmail.com</a><br>
-                <a href="tel:+998935530650">+998 93 553 06 50</a><br>
-                <a href="https://t.me/zombjkee">Телеграмм</a>
-<!--                discord-->
-<!--                skype-->
-            </div>
+            <div class="col text-end"></div>
         </div>
         <hr>
-        <div class="row sticky-top">
-            <ul class="nav nav-underline justify-content-around bg-body-tertiary">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Стек технологий</a>
+        <div class="row sticky-top" id="navbar-menu">
+            <ul class="nav nav-underline justify-content-around bg-body-tertiary ">
+                <li class="nav-item ">
+                    <a class="nav-link active text-info-emphasis" href="#tech-stack">Стек технологий</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Образование</a>
+                <li class="nav-item text-info-emphasis">
+                    <a class="nav-link text-info-emphasis" href="#seniority">Трудовой стаж</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Трудовой стаж</a>
+                <li class="nav-item text-info-emphasis">
+                    <a class="nav-link text-info-emphasis" href="#other-projects">Интересные проекты</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Интересные проекты</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Контакты</a>
+                <li class="nav-item text-info-emphasis">
+                    <a class="nav-link text-info-emphasis" href="#contacts">Контакты</a>
                 </li>
             </ul>
         </div>
         <hr>
-        <div>
-
-            <div class="row">
-                <h5>Back-end stack</h5>
-                <div class="col-8">
-
+        <div data-bs-spy="scroll" data-bs-root-margin="0px 0px" data-bs-target="#navbar-menu">
+            <div id="tech-stack">
+                <h3 class="text-center my-3 text-info-emphasis">Стек технологий используемых в повседневной работе</h3>
+                <div class="row mx-2">
+                    <div class="col-8 my-2">
+                        <h4 class="text-primary-emphasis">Back-end stack</h4>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">Spring Framework:
+                            <small class="text-body-secondary fw-normal">Создание RESTful сервисов, реализация бизнес логики, примение различных молудей фремворка, интеграция с базами данных и другими сервисами.</small>
+                        </p>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">Lombok:
+                            <small class="text-body-secondary fw-normal">Упрощение кода моделей с помощью аннотаций.</small>
+                        </p>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">Maven:
+                            <small class="text-body-secondary fw-normal">Управление зависимостями и сборка проектов.</small>
+                        </p>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">MVC:
+                            <small class="text-body-secondary fw-normal">Применение шаблона проектирования для разделения логики приложения.</small>
+                        </p>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">JPA / Hibernate:
+                            <small class="text-body-secondary fw-normal">Организация доступа к данным через ORM.</small>
+                        </p>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">MySql / PostgreSQL:
+                            <small class="text-body-secondary fw-normal">Работа с реляционными базами данных.</small>
+                        </p>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">RabbitMQ:
+                            <small class="text-body-secondary fw-normal">Интеграция систем с помощью асинхронных сообщений.</small>
+                        </p>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">JUnit:
+                            <small class="text-body-secondary fw-normal">Написание модульных тестов для обеспечения качества кода.</small>
+                        </p>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">Git:
+                            <small class="text-body-secondary fw-normal">Версионный контроль с использованием GitHub и GitLab.</small>
+                        </p>
+                    </div>
+                    <div class="col-4">
+                        <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                            <img src="/images/backend.jpg" width="400" height="500">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-4">
-                    <img src="/images/backend_stack.jpg" width="400" height="400">
+                <div class="row mx-2">
+                    <div class="col-6 my-2">
+                        <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                            <img src="/images/api.jpg" width="500" height="400">
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h4 class="my-4 text-primary-emphasis">API</h4>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">REST (Representational State Transfer):
+                            <small class="text-body-secondary fw-normal">Проектирование и разработка RESTful API с акцентом на простоту, масштабируемость и гибкость. Использование HTTP методов (GET, POST, PUT, DELETE) для взаимодействия с серверными ресурсами. Создание интуитивно понятных и документированных API, которые позволяют клиентам легко взаимодействовать с сервисом.</small>
+                        </p>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">SOAP (Simple Object Access Protocol):
+                            <small class="text-body-secondary fw-normal">Разработка надежных веб-сервисов с использованием SOAP, обеспечивающих высокий уровень безопасности и транзакционности. Применение SOAP для обмена структурированными сообщениями в формате XML между клиентом и сервером. Интеграция сложных бизнес-процессов и систем с помощью стандартизированных протоколов.</small>
+                        </p>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">WSDL (Web Services Description Language):
+                            <small class="text-body-secondary fw-normal">Описание веб-сервисов с помощью WSDL, предоставляя четкую спецификацию интерфейсов и операций. Автоматизация генерации клиентского и серверного кода на основе WSDL документов. Обеспечение совместимости и взаимодействия между различными веб-сервисами.</small>
+                        </p>
+                    </div>
+                </div>
+                <div class="row mx-2">
+                    <div class="col-7 my-2">
+                        <h4 class="my-4 text-primary-emphasis">Front-end stack</h4>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">HTML5 / Thymeleaf:
+                            <small class="text-body-secondary fw-normal">Разработка шаблонов страниц, организация контента и его динамическое отображение.</small>
+                        </p>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">CSS3 / LESS:
+                            <small class="text-body-secondary fw-normal">Применение стилей для визуального оформления элементов интерфейса, использование препроцессоров для упрощения и оптимизации CSS.</small>
+                        </p>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">Bootstrap 3/4/5:
+                            <small class="text-body-secondary fw-normal">Создание адаптивных и кроссбраузерных интерфейсов с использованием готовых компонентов и сеток.</small>
+                        </p>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">JavaScript / jQuery:
+                            <small class="text-body-secondary fw-normal">Реализация клиентской логики, обработка событий, взаимодействие с DOM, отправка AJAX-запросов.</small>
+                        </p>
+                        <p class="h5 fw-bold my-4 text-success-emphasis">WebSocket / STOMP / SockJS:
+                            <small class="text-body-secondary fw-normal">Настройка двустороннего обмена данными между клиентом и сервером в реальном времени, создание интерактивных веб-приложений.</small>
+                        </p>
+                    </div>
+                    <div class="col-5">
+                        <div class="d-flex justify-content-center align-items-center w-100 h-100">
+                            <img src="/images/fronend_stack.jpg" width="450" height="350">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="seniority">
+                <h3 class="text-center my-3 text-info-emphasis">Трудовой стаж в сфере разработки клиент-серверных приложений</h3>
+                <div class="row mx-2">
+                    <p class="h5 fw-bold text-success-emphasis">Организация:
+                        <small class="text-body-secondary fw-normal">OOO "Mayasoft"</small>
+                    </p>
+                    <p class="h5 fw-bold text-success-emphasis">Торговый бренд:
+                        <small class="text-body-secondary fw-normal">MARTA</small>
+                    </p>
+                    <p class="h5 fw-bold text-success-emphasis">Сайт компании:
+                        <small class="text-body-secondary fw-normal"><a href="https://marta.uz">marta.uz</a></small>
+                    </p>
+                    <p class="h5 fw-bold text-success-emphasis">Сфера деятельности компании:</p>
+                        <li class="text-body-secondary">Разработка SoftPOS и SmartPOS решений для банков.</li>
+                        <li class="text-body-secondary">Высококачественные, удобные в использовании и безопасные решения для приема безналичных платежей.</li>
+                        <li class="text-body-secondary">Повышение эффективности и безопасности транзакционных процессов, снижение рисков и ошибок в финансовых операциях.</li>
+                        <li class="text-body-secondary">Укрепление позиций компании на рынке платежных решений благодаря разработке конкурентоспособных продуктов.</li>
+                    <p class="h5 fw-bold text-success-emphasis">Должность:
+                        <small class="text-body-secondary fw-normal">Инженер-программист</small>
+                    </p>
+                    <p class="h5 fw-bold text-success-emphasis">Стаж:
+                        <small class="text-body-secondary fw-normal">2 года</small>
+                    </p>
+                    <p class="h5 fw-bold text-success-emphasis">Обязанности:</p>
+                        <li class="text-body-secondary">Разработка и поддержка SoftPOS и SmartPOS решений, а также интеграция с банковскими системами и процессингами.</li>
+                        <li class="text-body-secondary">Реализация сервисов для сеттелментов и реконциляции, обеспечивая точность и своевременность финансовых операций.</li>
+                        <li class="text-body-secondary">Создание и поддержка сервисов для онбординга клиентов, включая банки, с целью обеспечения плавного внедрения и использования платежных решений.</li>
+                        <li class="text-body-secondary">Сотрудничество с банками в разных странах для интеграции платежных систем и упрощения трансграничных платежей.</li>
+                        <li class="text-body-secondary">Разработка и оптимизация API для взаимодействия с банковскими сервисами, включая SOAP и REST протоколы.</li>
+                        <li class="text-body-secondary">Поддержание высоких стандартов безопасности данных и транзакций в соответствии с международными нормами и стандартами.</li>
+                        <li class="text-body-secondary">Полный цикл разработки программного обеспечения, включая анализ требований, проектирование, кодирование, тестирование и деплоймент.</li>
+                        <li class="text-body-secondary">Создание надежных и безопасных веб-приложений для обработки платежей и управления транзакциями.</li>
+                        <li class="text-body-secondary">Интеграция фронтенд и бэкенд частей приложений с использованием современных технологий и фреймворков.</li>
+                        <li class="text-body-secondary">Работа с серверными технологиями, такими как Spring Framework, Spring Boot, Lombok, Maven, MVC, JPA, Hibernate, PostgreSQL, RabbitMQ, JUnit, Git.</li>
+                        <li class="text-body-secondary">Разработка клиентских интерфейсов с использованием HTML, Thymeleaf, CSS, LESS, Bootstrap, JavaScript, jQuery, WebSocket, STOMP, SockJS.</li>
+                        <li class="text-body-secondary">Обеспечение высокой производительности и отзывчивости приложений, а также их масштабируемости и безопасности.</li>
+                        <li class="text-body-secondary">Постоянное взаимодействие с командой разработчиков и банковскими партнерами для улучшения и расширения функционала платежных решений.</li>
+                        <li class="text-body-secondary">Постоянное обучение и внедрение лучших практик разработки для повышения качества продукта.</li>
+                </div>
+                <h4 class="text-center my-3 text-info-emphasis">Трудовой стаж в сфере разработки и обслуживания систем автоматизации технологических процессов</h4>
+                <p class="text-body-tertiary text-center px-5">*Данный стаж не является ключевым в текущей специализации, но повлиял на общее понимание сферы програмирования и построения высоконагруженных систем.</p>
+                <div class="row mx-2">
+                    <p class="h5 fw-bold text-success-emphasis">Организации:
+                        <small class="text-body-secondary fw-normal">ООО «ЛУКОЙЛ Узбекистан Оперейтинг Компани» / АО «Узбекнефтегазинформатика»</small>
+                    </p>
+                    <p class="h5 fw-bold text-success-emphasis">Сфера деятельности компаний:
+                        <small class="text-body-secondary fw-normal">Газодобывающие и перерабатывающие предприятия на територии республики Узбекистан</small>
+                    </p>
+                    <p class="h5 fw-bold text-success-emphasis">Должность:
+                        <small class="text-body-secondary fw-normal">Инженер-программист АСУП / Инженер-программист АСУТП</small>
+                    </p>
+                    <p class="h5 fw-bold text-success-emphasis">Общий стаж работы в 2х компаниях:
+                        <small class="text-body-secondary fw-normal">8 лет</small>
+                    </p>
+                    <p class="h5 fw-bold text-success-emphasis">Обязанности:</p>
+                        <li class="text-body-secondary">Разработка и поддержка автоматизированных систем управления технологическими процессами</li>
+                        <li class="text-body-secondary">Программирование контроллеров различных производителей, включая Siemens, Honeywell, Allen-Bradley, и GE Fanuc</li>
+                        <li class="text-body-secondary">Разработка и интеграция SCADA-систем для мониторинга и управления процессами</li>
+                        <li class="text-body-secondary">Настройка и калибровка измерительных приборов и систем автоматизации</li>
+                        <li class="text-body-secondary">Мониторинг и диагностика технического состояния оборудования АСУТП</li>
+                        <li class="text-body-secondary">Обеспечение выполнения предписаний органов контроля и надзора</li>
+                        <li class="text-body-secondary">Участие в пусконаладочных работах при строительстве новых объектов</li>
+                        <li class="text-body-secondary">Обучение персонала для работы с автоматизированными системами</li>
+                        <li class="text-body-secondary">Ведение эксплуатационной документации и отчетности</li>
+                        <li class="text-body-secondary">Соблюдение требований охраны труда и промышленной безопасности</li>
+                        <li class="text-body-secondary">Программирование на языках семейства МЭК (LD, FBD, SFC, CFC), для создания и поддержки программного обеспечения</li>
+                        <li class="text-body-secondary">Участие в разработке технических заданий и технической документации</li>
+                        <li class="text-body-secondary">Работа в комиссиях по расследованию причин аварий и инцидентов</li>
+                        <li class="text-body-secondary">Формирование предложений по улучшению систем управления технологическими процессами</li>
+                </div>
+            </div>
+            <hr>
+            <div id="other-projects">
+                <h3 class="text-center my-3 text-info-emphasis">Дополнительные коммерческие проекты</h3>
+                <div class="row mx-2">
+                    <h4 class="text-body-secondary text-center">Я люблю все, что связано с автоматизацией. Поэтому в свободное время автоматизирую процессы внутри разных компаний, вот самые интересные на мой взгляд:</h4>
+                </div>
+                <div class="row mx-2 my-3">
+                    <p class="h5 fw-bold">Организация:
+                        <small class="text-body-secondary fw-normal">Lift universal</small>
+                    </p>
+                    <p class="h5 fw-bold">Сайт:
+                        <small class="text-body-secondary fw-normal"><a href="https://lift-universal.uz/">lift-universal.uz</a></small>
+                    </p>
+                    <p class="h5 fw-bold">Проблема:
+                        <small class="text-body-secondary fw-normal">Компания специализируется на продаже, установке и техническом обслуживании лифтов и эскалаторов. Ранее вся отчетность и документация по работам с оборудованием велись в одном Excel-файле, который со временем стал чрезмерно объемным, что затрудняло и замедляло работу с ним. Кроме того, стояла задача минимизации бумажных расходов на отчеты, которые необходимо предоставлять заказчикам по завершении каждого вида работ на объектах.</small>
+                    </p>
+                    <p class="h5 fw-bold">Решение:
+                        <small class="text-body-secondary fw-normal">Я разработал клиент-серверное приложение на основе Spring Boot с базой данных PostgreSQL и клиентской частью на чистом JavaScript с применением jQuery. Важной задачей для заказчика было отображение каждого объекта в виде точки на карте, что я реализовал с помощью бесплатного плагина Leaflet и карт OpenStreetMap. В приложении предусмотрены различные роли с изолированными функциями:
+                            Администратор контролирует все процессы, имеет доступ к дашборду с визуализацией текущих заявок и статусов оборудования, а также может управлять пользователями системы.
+                            Модератор отвечает за добавление и редактирование объектов с установленным оборудованием на главной карте.
+                            Пользователь используется техническими бригадами для обслуживания объектов и предоставления отчетов заказчику.
+                            Менеджер занимается онбордингом клиентов, добавлением маркеров и комментариев к объектам, а также управлением жизненным циклом объектов от статуса к статусу, вплоть до их конвертации в объекты, подлежащие обслуживанию.
+                            Каждое оборудование имеет индивидуальный перечень работ, зависящий от модели и необходимого количества обслуживаний в год. Проект был выполнен мной ‘под ключ’, начиная от разработки концепции до загрузки на сервер заказчика, за исключением деплоймента, который осуществлялся девопсом заказчика</small>
+                    </p>
+                    <div class="carousel slide" data-bs-ride="carousel" id="carousel-lift">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="/images/lift/scheme.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block text-start" style="top: 2%; left: 5%">
+                                    <h5>Диаграмма взаимоотношений сущностей в проекте</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="/images/lift/1.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Панель модератора</h5>
+                                    <p>Добавление / редактирование объектов и оборудования</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="/images/lift/2.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block text-dark">
+                                    <h5>Дашборд</h5>
+                                    <p>Мониторинг текущего состояния объектов, оборудования и заявок</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="/images/lift/3.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Пользовательская форма</h5>
+                                    <p>Проведение технического обслуживания оборудованию. Создание заявок</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="/images/lift/4.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block text-dark">
+                                    <h5>Пользовательская форма</h5>
+                                    <p>Выделение проведенных работ в рамках выбранного технического обслуживания</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="/images/lift/5.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Отчет о выполненых работах</h5>
+                                    <p>Подпись акта выполненных работ прямо на странице браузера</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="/images/lift/6.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block text-dark">
+                                    <h5>Форма менеджера</h5>
+                                    <p>Добавление контактов, коментариев к объекту. Изменение статуса объета</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="/images/lift/7.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block text-bg-dark">
+                                    <h5>Интерактивный фильтр</h5>
+                                    <p>Фильтрация объектов на карте по статусам, благодаря взаимодействию с чартом</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-lift" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-lift" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <hr>
+                <div class="row mx-2 my-3">
+                    <p class="h5 fw-bold">Организация:
+                        <small class="text-body-secondary fw-normal">Сервисный центр по ремонту компьютерного и офисного оборудования</small>
+                    </p>
+                    <p class="h5 fw-bold">Проблема:
+                        <small class="text-body-secondary fw-normal">Сеть сервисных центров, раскинувших свои филиалы по различным городам, централизованно осуществляет заказ запасных частей через головной сервисный центр. В период, когда объемы поставок оставались в пределах управляемых, бизнес эффективно функционировал, используя Excel-файлы для оформления заказов и ведения отчетности в центральном офисе. Такой же подход был применен для ведения ‘склада’. Но по мере роста бизнеса использование Excel таблиц становится очень сложной и не удобной задачей.</small>
+                    </p>
+                    <p class="h5 fw-bold">Решение:
+                        <small class="text-body-secondary fw-normal">В рамках стремления к цифровой трансформации бизнес-процессов, мной было успешно реализовано масштабируемое клиент-серверное приложение, оптимизирующее управление складскими запасами и заказами. Проект основан на надежном и проверенном технологическом стеке, включающем Spring Framework, PostgreSQL и JavaScript с jQuery, что обеспечивает высокую производительность и удобство использования.</small>
+                    </p>
+                    <li class="text-body-secondary"><b>Управление Складом:</b> Интуитивно понятный интерфейс для мониторинга истории движения товаров, пополнения запасов и списания материалов.</li>
+                    <li class="text-body-secondary"><b>Система Заказов:</b> Гибкая система обработки заказов, поддерживающая как гарантийный ремонт, так и прямые покупки, с возможностью интеграции с поставщиками.</li>
+                    <li class="text-body-secondary"><b>Менеджерский Функционал:</b> Эффективные инструменты для подтверждения заказов, их консолидации и последующей отправки, что значительно упрощает логистические процессы.</li>
+                    <li class="text-body-secondary"><b>Финансовые Операции:</b> Встроенная система управления балансом пользователей с опцией пополнения и матричной системой комиссий для гибкого ценообразования.</li>
+                    <p class="h5 mt-2 fw-bold">
+                        <small class="text-body-secondary fw-normal">Результатом стал уникальный аналог интернет-магазина, специально адаптированный под узкоспециализированные нужды бизнеса, обеспечивающий прозрачность и эффективность всех торговых операций.</small>
+                    </p>
+                    <h6 class="text-center">**Заказчик запретил выкладывать скриншоты с реальными данными. Все данные на скриншотах ниже тестовые.</h6>
+                    <div class="carousel slide" data-bs-ride="carousel" id="carousel-service">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="/images/service/scheme.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block text-start" style="left: 2%">
+                                    <h5 class="">Диаграмма взаимоотношений сущностей в проекте</h5>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="/images/service/2.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block text-bg-dark">
+                                    <h5>Страница пользователей</h5>
+                                    <p>Заказ запчастей, история заказов, график изменения баланса, счетчик времени до конца формирования заказа</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="/images/service/3.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Форма заказа для гарантийного ремонта</h5>
+                                    <p>Автоматическое создание оборудования в системе, индивидуальная калькуляция цены на детали</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="/images/service/4.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Пользовательская комиссия</h5>
+                                    <p>Индивидуальная настройка матричной системы комиссии для каждого пользователя</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="/images/service/5.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block text-dark">
+                                    <h5>История заказов</h5>
+                                    <p>Детальная история заказов у поставщиков, связанная со 'Складом' для отслеживания состояния каждого заказа</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="/images/service/6.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block text-bg-dark">
+                                    <h5>История совершенных операций на 'Cкладе'</h5>
+                                    <p>Детальная история операций для контроля и учета содержимого 'Склада'</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="/images/service/7.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Подтверждение / Отмена заказа</h5>
+                                    <p>Отражены все данные заказа с возможностью отмены или подтверждения заказа</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="5000">
+                                <img src="/images/service/8.png" class="d-block w-100">
+                                <div class="carousel-caption d-none d-md-block text-dark">
+                                    <h5>'Выдать со склада'</h5>
+                                    <p>Заказы которые доступны к выдачи конечным пользователям</p>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-service" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-service" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div id="contacts">
+                <h3 class="text-center my-3 text-info-emphasis">Свяжитесь со мной любым удобным для вас способом</h3>
+                <div class="row mx-2 justify-content-center">
+                    <div class="col-3">
+                        <div class="link-success d-flex align-items-center justify-content-end" data-bs-toggle="tooltip" title="Отправить письмо по электронной почте">
+                            <a class="link-success mx-2" href="mailto:rasulov.lg@gmail.com">rasulov.lg@gmail.com</a>
+                            <span class="fs-4"><i class="bi bi-envelope-at"></i></span>
+                        </div>
+                        <div class="link-success d-flex align-items-center justify-content-end" data-bs-toggle="tooltip" title="Позвонить">
+                            <a class="link-success mx-2" href="tel:+998935530650">+998 93 553 06 50</a>
+                            <span class="fs-4"><i class="bi bi-telephone-outbound"></i></span>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="link-success d-flex align-items-center justify-content-start" data-bs-toggle="tooltip" title="Отправить сообщение в телеграм">
+                            <span class="fs-4"><i class="bi bi-telegram"></i></span>
+                            <a class="link-success mx-2" href="https://t.me/zombjkee">@zombjkee</a>
+                        </div>
+                        <div class="link-success d-flex align-items-center justify-content-start" data-bs-toggle="tooltip" title="Найти в Discord">
+                            <span class="fs-4"><i class="bi bi-discord"></i></span>
+                            <a class="link-success mx-2" href="https://discordapp.com/users/647485234564300811/">_zombjkee</a>
+                        </div>
+                        <div class="link-success d-flex align-items-center justify-content-start" data-bs-toggle="tooltip" title="Найти в Skype">
+                            <span class="fs-4"><i class="bi bi-skype"></i></span>
+                            <a class="link-success mx-2" href="skype:zombjkee?userinfo">zombjkee</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
